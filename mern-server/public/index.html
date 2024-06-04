@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>chatApp</h1>
+    <div class="main">
+      <div class="name">
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Name"
+          class="name-input"
+        />
+      </div>
+      <div>
+        <ul class="msg-container" id="msg-container">
+          <li class="msg-left">
+            <p class="message">
+              fvbfbfb <br /><br />
+              <span></span>
+            </p>
+          </li>
+          <li class="msg-right"><p class="message">fbgtbgyn</p></li>
+          <li class="msg-feedback"><p class="feedback" id="feedback"></p></li>
+        </ul>
+      </div>
+      <div>
+        <form action="" class="msg-form" id="msg-form">
+          <input
+            type="text"
+            name="message"
+            class="message-input"
+            id="message-input"
+          />
+          <button type="submit" class="send-btn" id="send-btn">send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
